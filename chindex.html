@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>布朗大学中国学生学者联合会主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .mySlides {display:none;}
+  </style>
+  </head>
+
+  <body>
+  
+  <div class = "w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+  <a href="#" class="w3-bar-item w3-button w3-brown w3-padding-large">BrownCSSA</a>
+  <a href="#Home" class="w3-bar-item w3-button w3-padding-large">主页</a>
+  <a href="#About Us" class="w3-bar-item w3-button w3-padding-large">关于我们</a>
+  <a href="#News" class="w3-bar-item w3-button w3-padding-large">新闻动态</a>
+  <a href="#Events" class="w3-bar-item w3-button w3-padding-large">活动预告</a>
+  <a href="#Campus" class="w3-bar-item w3-button w3-padding-large">校园生活</a>
+  <a href="#BBS" class="w3-bar-item w3-button w3-padding-large">论坛</a>
+  <a href="#Contact" class="w3-bar-item w3-button w3-padding-large">联系我们</a>
+  <div class="w3-dropdown-hover w3-right">
+      <button class="w3-button w3-padding-large">中文</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-2">
+        <a href="index.html" hreflang="en" class="w3-bar-item w3-button w3-padding-large">English</a>
+      </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="w3-content" style = "max-width:2000px;margin-top:40px">
+    <div class="mySlides" style="display:none">
+      <img src="homelogo.png" style="width:100%">
+    </div>
+    <div class="mySlides" style="display:none">
+      <img src="pastevents.png" style="width:100%">
+    </div>
+    <div class="mySlides" style="display:none">
+      <img src="comingevents.PNG" style="width:100%">
+    </div>
+    <div class="mySlides" style="display:none">
+      <img src="campus life.png" style="width:100%">
+    </div>
+    
+    
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+    
+</body>
+</html>
