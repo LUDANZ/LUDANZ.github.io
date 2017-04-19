@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BrownCSSA|News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://LUDANZ.github.io/web.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .mySlides {display:none;}
+    body {font-family: "Lato", sans-serif}
+  </style>
+  </head>
+
+  <body>
+  
+  <div class = "w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+  <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-brown w3-padding-large">BrownCSSA</a>
+  <a href="http://LUDANZ.github.io/chindex.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">主页</a>
+  <div class="w3-dropdown-hover w3-hide-small" >
+      <button class="w3-button w3-padding-large"><a href="chaboutus.html" style="text-decoration: none;">关于我们</a></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-2" style = "width:60px;">
+        <a href="chaboutus.html#overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">学联简介</a>
+        <a href="chaboutus.html#department" class="w3-bar-item w3-button w3-padding-large w3-hide-small">部门介绍</a>
+        <a href="chaboutus.html#eboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">主席团</a>
+        <a href="chaboutus.html#sponsors" class="w3-bar-item w3-button w3-padding-large w3-hide-small">合作商家</a>
+      </div>
+  </div>
+  <a href="chnews.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">新闻动态</a>
+  <a href="chevents.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">活动预告</a>
+  <a href="chcampus.htnl" class="w3-bar-item w3-button w3-padding-large w3-hide-small">校园生活</a>
+  <a href="#BBS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">论坛</a>
+  <a href="chcontact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">联系我们</a>
+  <div class="w3-dropdown-hover w3-right w3-hide-small">
+      <button class="w3-button w3-padding-large">中文</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-2">
+        <a href="http://LUDANZ.github.io/index.html" hreflang="en" class="w3-bar-item w3-button w3-padding-large">English</a>
+      </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="http://LUDANZ.github.io/chindex.html" class="w3-bar-item w3-button w3-padding-large">主页</a>
+  <a href="chaboutus.html" class="w3-bar-item w3-button w3-padding-large">关于我们</a>
+  <a href="chnews.html" class="w3-bar-item w3-button w3-padding-large">新闻动态</a>
+  <a href="chevents.html" class="w3-bar-item w3-button w3-padding-large">活动预告</a>
+  <a href="chcampus.html" class="w3-bar-item w3-button w3-padding-large">校园生活</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">论坛</a>
+  <a href="chcontact.html" class="w3-bar-item w3-button w3-padding-large">联系我们</a>
+  <a href="http://LUDANZ.github.io/index.html" class="w3-bar-item w3-button w3-padding-large">English</a>
+  </div>
+  
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id = "news">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-brown w3-left"> 来呀来呀 Let's Meet</h1>
+      <div class="w3-container">
+      <p class="w3-opacity" style = "text-align:left;line-height:200%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        </p>
+      <button class="w3-button w3-brown w3-margin-bottom" style = "float:left;"><a href="#" style="text-decoration: none;">Details</a></button>
+      </div>
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-padding-large w3-padding-64 w3-center">
+      <img src = "http://LUDANZ.github.io/images/news/1.jpg" width="100%"></p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-brown w3-left"> 罗德岛五校联合春晚</h1>
+      <div class="w3-container">
+      <p class="w3-opacity" style = "text-align:left;line-height:200%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+       </p>
+      <button class="w3-button w3-brown w3-margin-bottom" style = "float:left;"><a href="#" style="text-decoration: none;">Details</a></button>     
+      </div>
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-padding-large w3-padding-64 w3-center">
+      <img src = "http://LUDANZ.github.io/images/news/2.jpg" width="100%"></p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-brown w3-left"> 罗德岛最强音</h1>
+      <div class="w3-container">
+      <p class="w3-opacity" style = "text-align:left;line-height:200%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        </p>
+      <button class="w3-button w3-brown w3-margin-bottom" style = "float:left;"><a href="#" style="text-decoration: none;">Details</a></button>
+      </div>
+      </div>
+    <div class="w3-third w3-container">
+      <p class="w3-padding-large w3-padding-64 w3-center">
+        <img src = "http://LUDANZ.github.io/images/news/3.jpg" width="100%"></p>
+    </div>
+  </div>
+  </div>
+    
+  <script>
+function myFunction() {
+    var x = document.getElementById("mobilenav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
