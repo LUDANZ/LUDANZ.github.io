@@ -11,24 +11,25 @@
 
   <body>
   
-  <div class = "w3-top w3-small-hide">
+  <div class = "w3-top">
   <div class="w3-bar w3-black w3-card-2">
-  <a href="#" class="w3-bar-item w3-button w3-brown w3-padding-large w3-mobile">BrownCSSA</a>
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-mobile">Home</a>
-  <div class="w3-dropdown-hover w3-mobile">
+  <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-brown w3-padding-large w3-hide-small">BrownCSSA</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+  <div class="w3-dropdown-hover w3-hide-small">
     <button class="w3-button w3-padding-large"><a href="pages/aboutus.html" style="text-decoration: none;">About Us</a></button>
       <div class="w3-dropdown-content w3-bar-block w3-card-2" style = "width:60px;">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-mobile">Overview</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-mobile">Departments</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-mobile">Sponsors</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Overview</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Departments</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sponsors</a>
       </div>
   </div>
-  <a href="#News" class="w3-bar-item w3-button w3-padding-large w3-mobile">News</a>
-  <a href="pages/events" class="w3-bar-item w3-button w3-padding-large w3-mobile">Events</a>
-  <a href="#Campus" class="w3-bar-item w3-button w3-padding-large w3-mobile">Campus Life</a>
-  <a href="#BBS" class="w3-bar-item w3-button w3-padding-large w3-mobile">BBS</a>
-  <a href="#Contact" class="w3-bar-item w3-button w3-padding-large w3-mobile">Contact</a>
-  <div class="w3-dropdown-hover w3-right w3-mobile">
+  <a href="#News" class="w3-bar-item w3-button w3-padding-large w3-hide-small">News</a>
+  <a href="pages/events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Events</a>
+  <a href="#Campus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Campus Life</a>
+  <a href="#BBS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BBS</a>
+  <a href="#Contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+  <div class="w3-dropdown-hover w3-right w3-hide-small">
       <button class="w3-button w3-padding-large">English</button>
       <div class="w3-dropdown-content w3-bar-block w3-card-2">
         <a href="chindex.html" hreflang="zh" class="w3-bar-item w3-button w3-padding-large">中文</a>
@@ -88,6 +89,15 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
     
