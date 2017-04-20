@@ -64,7 +64,7 @@
       <input id ="email" class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
       <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
       <input id ="message" class="w3-input w3-padding-64 w3-section" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" onclick="return thankyou();" type="submit">
+      <button class="w3-button w3-black w3-section" onclick="document.getElementById('thankyou_message').style.display='block';" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
       </form>
@@ -75,17 +75,18 @@
     <div id="thankyou_message" class="w3-modal" style="display:none;">
     <div class="w3-modal-content w3-animate-top w3-card-4">
       <header class="w3-container w3-black w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('thankyou_message').style.display='none'" 
-       class="w3-button w3-black w3-xlarge w3-display-topright">Close</span>
-        <h2 class="w3-white">Thank you for your comments!</h2>
+        <h3 class="w3-text-white">We have successfully received your message!</h3>
       </header>
       </div>
     </div>
       
     <script>
-      thankyou = function(){
-        document.getElementById('thankyou_message').style.display='block';
-      }
+     var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
     </script>
   </body>
 </html>
