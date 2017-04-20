@@ -80,7 +80,7 @@
       </div>
     </div>
     
-    <div id="googleMap" style="width:100%;height:600px;" class="w3-container w3-center"></div>
+    <div id="googleMap" style="width:100%;height:600px;" class="w3-brown w3-container w3-center"></div>
  <script>
 function myMap() {
   myCenter=new google.maps.LatLng(41.826820, -71.402931);
@@ -118,6 +118,14 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+    function myFunction() {
+    var x = document.getElementById("mobilenav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
     </script>
   </body>
