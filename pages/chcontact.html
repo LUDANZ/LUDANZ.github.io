@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BrownCSSA|活动预告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://LUDANZ.github.io/web.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .mySlides {display:none;}
+    body {font-family: "Lato", sans-serif}
+  </style>
+  </head>
+
+  <body>
+  
+  <div class = "w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+  <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-brown w3-padding-large">BrownCSSA</a>
+  <a href="http://LUDANZ.github.io/chindex.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">主页</a>
+  <div class="w3-dropdown-hover w3-hide-small" >
+      <button class="w3-button w3-padding-large"><a href="chaboutus.html" style="text-decoration: none;">关于我们</a></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-2" style = "width:60px;">
+        <a href="chaboutus.html#overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">学联简介</a>
+        <a href="chaboutus.html#department" class="w3-bar-item w3-button w3-padding-large w3-hide-small">部门介绍</a>
+        <a href="chaboutus.html#eboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">主席团</a>
+        <a href="chaboutus.html#sponsors" class="w3-bar-item w3-button w3-padding-large w3-hide-small">合作商家</a>
+      </div>
+  </div>
+  <a href="chnews.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">新闻动态</a>
+  <a href="chevents.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">活动预告</a>
+  <a href="chcampus.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">校园生活</a>
+  <a href="#BBS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">论坛</a>
+  <a href="chcontact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">联系我们</a>
+  <div class="w3-dropdown-hover w3-right w3-hide-small">
+      <button class="w3-button w3-padding-large">中文</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-2">
+        <a href="http://LUDANZ.github.io/index.html" hreflang="en" class="w3-bar-item w3-button w3-padding-large">English</a>
+      </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="mobilenav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="http://LUDANZ.github.io/chindex.html" class="w3-bar-item w3-button w3-padding-large">主页</a>
+  <a href="chaboutus.html" class="w3-bar-item w3-button w3-padding-large">关于我们</a>
+  <a href="chnews.html" class="w3-bar-item w3-button w3-padding-large">新闻动态</a>
+  <a href="chevents.html" class="w3-bar-item w3-button w3-padding-large">活动预告</a>
+  <a href="chcampus.html" class="w3-bar-item w3-button w3-padding-large">校园生活</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">论坛</a>
+  <a href="chcontact.html" class="w3-bar-item w3-button w3-padding-large">联系我们</a>
+  <a href="http://LUDANZ.github.io/index.html" class="w3-bar-item w3-button w3-padding-large">English</a>
+  </div>
+  
+  <div class="w3-brown" id="contact">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+    <div class="w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">联系我们</h3>
+    <p>我们将尽快回复您！</p>
+    <form action="https://script.google.com/macros/s/AKfycbxajHOCtOq9Txo_Yu052yXPnzkCUBb_L78dskCfngTEp9XkqLCM/exec" target="_blank">
+      <input id ="name" class="w3-input" type="text" placeholder="姓名" required name="Name">
+      <input id ="email" class="w3-input w3-section" type="text" placeholder="邮箱" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="主题" required name="Subject">
+      <input id ="message" class="w3-input w3-padding-64 w3-section" type="text" placeholder="内容" required name="Comment">
+      <button class="w3-button w3-black w3-section" onclick="document.getElementById('thankyou_message').style.display='block';" type="submit">
+        <i class="fa fa-paper-plane"></i> 发送
+      </button>
+      </form>
+  </div>
+  </div>
+    </div>
+
+    <div id="thankyou_message" class="w3-modal" style="display:none;margin-top:80px">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-black w3-center w3-padding-16"> 
+        <h3 class="w3-text-white">发送成功！</h3>
+      </header>
+      </div>
+    </div>
+    
+    <div id="googleMap" style="height:400px;" class="w3-brown w3-container w3-center" style="max-width:1000px">
+    </div>
+ <script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.826820, -71.402931);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvQjvw3Zsq2ZlIACp6c2eTi6_J4SSgY7Q&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-brown w3-xlarge">
+  <a href="http://LUDANZ.github.io/images/wechat.jpg" target="_blank"><i href="http://LUDANZ.github.io/images/wechat.jpg" class="fa fa-wechat w3-hover-opacity"></i></a>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+    
+    <script>
+     var modal = document.getElementById('thankyou_message');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    function myFunction() {
+    var x = document.getElementById("mobilenav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    </script>
+  </body>
+</html>
